@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -qq -y tar libfontconfig curl ca-certifica
     
 EXPOSE 3000
 
-COPY grafana.ini /etc/grafana/grafrana.ini
+COPY ./grafana.ini /etc/grafana/grafrana.ini
 COPY ./run.sh /run.sh
 
 USER grafana
